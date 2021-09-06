@@ -15,20 +15,20 @@ int main() {
     // x = 0;
     // p = 0;
     // q = 0;
-    int temp1,temp2,temp3;
+    int t1,t2,t3;
     
-    temp1 = x+3;
-    temp2 = y->f1;
-    temp3 = y->f2;
+    t1 = x+3;
+    t2 = y->f1;
+    t3 = y->f2;
     
-    z = temp1+temp2+temp3;
+    z = t1+t2+t3;
     for(i=0;i<200;i++){
         if(z>i){
-            p += temp1;
-            q += temp3;
+            p += t1;
+            q += t3;
         }else{
-            p += temp3;
-            q += temp1;
+            p += t3;
+            q += t1;
         }
     }
     // printf("%d-%d-%d-%d-%d-%d\n",x,y->f1,y->f2,z,p,q);
